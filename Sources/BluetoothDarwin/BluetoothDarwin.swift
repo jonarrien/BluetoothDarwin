@@ -6,6 +6,7 @@
 //  Copyright © 2018 PureSwift. All rights reserved.
 //
 
+#if os(OSX)
 import Foundation
 import IOBluetooth
 import CBluetoothDarwin
@@ -82,3 +83,4 @@ internal func BluetoothHCISendRawCommand(request: BluetoothHCIRequestID,
     }
     #endif
 }
+#endif

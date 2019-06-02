@@ -6,6 +6,7 @@
 //  Copyright © 2018 PureSwift. All rights reserved.
 //
 
+#if os(OSX)
 import Foundation
 import IOBluetooth
 import Darwin
@@ -222,3 +223,4 @@ public extension HostController {
         case unintialized = 0xFF
     }
 }
+#endif
