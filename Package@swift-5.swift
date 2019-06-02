@@ -2,6 +2,9 @@
 import PackageDescription
 
 _ = Package(name: "BluetoothDarwin",
+            platforms: [
+                .macOS(.v10_12)
+            ],
             products: [
                 .library(
                     name: "BluetoothDarwin",
